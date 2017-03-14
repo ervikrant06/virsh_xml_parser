@@ -37,7 +37,7 @@ Python script to parse the output of "virsh dumpxml" command captured with sosre
    - Running for dpdk based instances. MAC addresses are obfuscated.
 
 ~~~
-$ python xml_virsh_parser.py virsh_outputs/DPDK/virsh_-r_dumpxml_instance-00000*
+$ xmlvirshparser virsh_outputs/DPDK/virsh_-r_dumpxml_instance-00000*
 +-------------------+-----------+--------------------------------------+-----------------+------------+--------------------------------------+-----------+--------------------------------------+----------+------------------------------------+
 | name              | domain-id | instance-uuid                        | instance-name   | flavor     | image-id                             | infac-cnt | infac-details                        | disk-cnt | disk-details                       |
 +-------------------+-----------+--------------------------------------+-----------------+------------+--------------------------------------+-----------+--------------------------------------+----------+------------------------------------+
@@ -55,7 +55,7 @@ $ python xml_virsh_parser.py virsh_outputs/DPDK/virsh_-r_dumpxml_instance-00000*
    - Running for SRIOV based instances.
 
 ~~~
-$ python xml_virsh_parser.py virsh_outputs/SRIOV/virsh_-r_dumpxml_instance-00000007 
+$ xmlvirshparser virsh_outputs/SRIOV/virsh_-r_dumpxml_instance-00000007 
 +-------------------+-------------+--------------------------------------+---------------+--------------+--------------------------------------+-----------+------------------------------------+----------+------------------------------------+
 | name              | domain-id   | instance-uuid                        | instance-name | flavor       | image-id                             | infac-cnt | infac-details                      | disk-cnt | disk-details                       |
 +-------------------+-------------+--------------------------------------+---------------+--------------+--------------------------------------+-----------+------------------------------------+----------+------------------------------------+
@@ -68,7 +68,7 @@ $ python xml_virsh_parser.py virsh_outputs/SRIOV/virsh_-r_dumpxml_instance-00000
    - Running for tap interfaces:
 
 ~~~
-$ python xml_virsh_parser.py virsh_outputs/OSP7_01805281/virsh_-r_dumpxml_instance-0000*
+$ xmlvirshparser virsh_outputs/OSP7_01805281/virsh_-r_dumpxml_instance-0000*
 +-------------------+-------------+--------------------------------------+-------------------------------+-------------+--------------------------------------+-----------+------------------------------------------------------+----------+--------------------------------------------------------------------------+
 | name              | domain-id   | instance-uuid                        | instance-name                 | flavor      | image-id                             | infac-cnt | infac-details                                        | disk-cnt | disk-details                                                             |
 +-------------------+-------------+--------------------------------------+-------------------------------+-------------+--------------------------------------+-----------+------------------------------------------------------+----------+--------------------------------------------------------------------------+
