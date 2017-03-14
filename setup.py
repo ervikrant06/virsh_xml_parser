@@ -3,7 +3,6 @@ from setuptools import setup
 setup(name='xmlvirshparser',
       version='0.4',
       description='Parses virsh dump XML output to OpenStack prettytable form',
-      long_description=open('README.md').read(),
       url='https://github.com/ervikrant06/virsh_xml_parser',
       author='Vikrant Aggarwal',
       author_email='vaggarwa@redhat.com',
