@@ -1,25 +1,40 @@
-# virsh_xml_parser
-python script to parse the output of "virsh dumpxml" command captured with sosreport
+# xmlvirshparser
+
+Python script to parse the output of "virsh dumpxml" command captured with sosreport
+
+# Install
+
+	pip install xmlvirshparser
+
+## Manual install
+
+	# Clone this repo
+	git clone https://github.com/ervikrant06/virsh_xml_parser.github
+
+	# Install
+	python setup.py install
 
 # Requirements
 
-pip install xmltodict
+  (Ignore if installing using `pip`)
 
-pip install prettytable
+	pip install xmltodict
+	pip install prettytable
 
-# Running the script.
+# Usage
 
-python xml_virsh_parser.py <xmlfile1> <xmlfile2> <xmlfile3>
+	xmlvirshparser <xmlfile1> <xmlfile2> <xmlfile3>
 
-or
+  or run using wildcard
 
-Run using wildcard character.
+	xmlvirshparser <xmlfile*>
 
-python xml_virsh_parser.py <xmlfile*>
+	# Example
+	xmlvirshparser xml_file_00*
 
-# Sample outputs.
+## Examples
 
-- Running for dpdk based instances. MAC addresses are obfuscated. 
+   - Running for dpdk based instances. MAC addresses are obfuscated.
 
 ~~~
 $ python xml_virsh_parser.py virsh_outputs/DPDK/virsh_-r_dumpxml_instance-00000*
@@ -37,7 +52,7 @@ $ python xml_virsh_parser.py virsh_outputs/DPDK/virsh_-r_dumpxml_instance-00000*
 +-------------------+-----------+--------------------------------------+-----------------+------------+--------------------------------------+-----------+--------------------------------------+----------+------------------------------------+
 ~~~
 
-- Running for SRIOV based instances.
+   - Running for SRIOV based instances.
 
 ~~~
 $ python xml_virsh_parser.py virsh_outputs/SRIOV/virsh_-r_dumpxml_instance-00000007 
@@ -50,7 +65,7 @@ $ python xml_virsh_parser.py virsh_outputs/SRIOV/virsh_-r_dumpxml_instance-00000
 +-------------------+-------------+--------------------------------------+---------------+--------------+--------------------------------------+-----------+------------------------------------+----------+------------------------------------+
 ~~~
 
-- Running for tap interfaces:
+   - Running for tap interfaces:
 
 ~~~
 $ python xml_virsh_parser.py virsh_outputs/OSP7_01805281/virsh_-r_dumpxml_instance-0000*
