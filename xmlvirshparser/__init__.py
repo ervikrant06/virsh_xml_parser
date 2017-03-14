@@ -12,7 +12,7 @@ x.field_names=['name','domain-id','instance-uuid','instance-name','flavor','imag
 x.align="l"
 
 
-def extracting_vm_info(doc):
+def extracting_vm_info(doc, list1):
     '''
     Extract the VM information like name, domainid, nova instance UUID, etc..
     '''
@@ -36,7 +36,7 @@ def extracting_vm_info(doc):
     return(list1)
 
 
-def number_of_interfaces(doc):
+def number_of_interfaces(doc, list1):
     '''
     Calculate the number of interfaces
     '''
@@ -46,7 +46,7 @@ def number_of_interfaces(doc):
         return(list1.append(len(doc['domain']['devices']['interface'])))
     
 
-def number_of_disks(doc):
+def number_of_disks(doc, list1):
     '''
     Calculate the number of disks
     '''
@@ -56,7 +56,7 @@ def number_of_disks(doc):
         return(list1.append(len(doc['domain']['devices']['disk'])))
     
 
-def interface_details(doc):
+def interface_details(doc, list1):
     '''
     Capture the interface details in list. if/else condition is used to avoid
     the failure of code when only one interface is attached to a VM. 
@@ -96,7 +96,7 @@ def interface_details(doc):
     return(list1)
 
 
-def disk_details(doc):
+def disk_details(doc, list1):
     '''
     Capture the disk details in list. if/else condition is used to avoid
     the failure of code when only one disk is used to spawn a VM.
@@ -123,17 +123,17 @@ def disk_details(doc):
     return(list1)
 
 
-if __name__ == '__main__':
+def main():
     # for loop to loop through all input file and call functions.
     for i in sys.argv[1:]:
         list1=[]
         with open(i) as fd:
             doc=xmltodict.parse(fd.read())
-        extracting_vm_info(doc)
-        number_of_interfaces(doc)
-        interface_details(doc)    
-        number_of_disks(doc)
-        disk_details(doc)
+        extracting_vm_info(doc, list1)
+        number_of_interfaces(doc, list1)
+        interface_details(doc, list1)    
+        number_of_disks(doc, list1)
+        disk_details(doc, list1)
         '''
         Logic to change nested list separator from "," to "\n"
         e.g:
