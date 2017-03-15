@@ -8,7 +8,7 @@ from prettytable import ALL as ALL
 x=PrettyTable(hrules=ALL)
 y=PrettyTable()
 
-x.field_names=['name','domain-id','instance-uuid','instance-name','flavor','image-id','infac-cnt','infac-details','disk-cnt','disk-details']
+x.field_names=['name','domain-id','instance-uuid','instance-name','flavor','image-id','iface-cnt','iface-details','disk-cnt','disk-details']
 x.align="l"
 
 

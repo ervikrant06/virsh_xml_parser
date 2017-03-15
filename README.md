@@ -39,7 +39,7 @@ Python script to parse the output of "virsh dumpxml" command captured with sosre
 ~~~
 $ xmlvirshparser virsh_outputs/DPDK/virsh_-r_dumpxml_instance-00000*
 +-------------------+-----------+--------------------------------------+-----------------+------------+--------------------------------------+-----------+--------------------------------------+----------+------------------------------------+
-| name              | domain-id | instance-uuid                        | instance-name   | flavor     | image-id                             | infac-cnt | infac-details                        | disk-cnt | disk-details                       |
+| name              | domain-id | instance-uuid                        | instance-name   | flavor     | image-id                             | iface-cnt | iface-details                        | disk-cnt | disk-details                       |
 +-------------------+-----------+--------------------------------------+-----------------+------------+--------------------------------------+-----------+--------------------------------------+----------+------------------------------------+
 | instance-0000005f | 1         | b01ac376-e49a-4058-bd74-6d02db8c72fa | vCSM            | csm_flavor | 7be39b0f-d669-4f66-965c-1c19a0505c97 | 3         | [[u'vhostuser', u'xx:xx:xx:2b:f7:2e' | 2        | [[u'file', u'vda', u'virtio', None |
 |                   |           |                                      |                 |            |                                      |           | u'vhostuser', u'xx:xx:xx:05:b6:63'   |          | u'file', u'vdb', u'virtio', None]] |
@@ -57,7 +57,7 @@ $ xmlvirshparser virsh_outputs/DPDK/virsh_-r_dumpxml_instance-00000*
 ~~~
 $ xmlvirshparser virsh_outputs/SRIOV/virsh_-r_dumpxml_instance-00000007 
 +-------------------+-------------+--------------------------------------+---------------+--------------+--------------------------------------+-----------+------------------------------------+----------+------------------------------------+
-| name              | domain-id   | instance-uuid                        | instance-name | flavor       | image-id                             | infac-cnt | infac-details                      | disk-cnt | disk-details                       |
+| name              | domain-id   | instance-uuid                        | instance-name | flavor       | image-id                             | iface-cnt | iface-details                      | disk-cnt | disk-details                       |
 +-------------------+-------------+--------------------------------------+---------------+--------------+--------------------------------------+-----------+------------------------------------+----------+------------------------------------+
 | instance-00000007 | Not-Running | 87f3b39e-a033-4a6c-9014-7a84f11d163e | sriov_2VF_2   | sriov_flavor | a88f576d-bfe1-454f-ac95-5c9f3dc20699 | 3         | [[u'hostdev', u'xx:xx:xx:0d:fe:6f' | 1        | [u'file', u'vda', u'virtio', None] |
 |                   |             |                                      |               |              |                                      |           | u'hostdev', u'xx:xx:xx:09:ed:97'   |          |                                    |
@@ -70,7 +70,7 @@ $ xmlvirshparser virsh_outputs/SRIOV/virsh_-r_dumpxml_instance-00000007
 ~~~
 $ xmlvirshparser virsh_outputs/OSP7_01805281/virsh_-r_dumpxml_instance-0000*
 +-------------------+-------------+--------------------------------------+-------------------------------+-------------+--------------------------------------+-----------+------------------------------------------------------+----------+--------------------------------------------------------------------------+
-| name              | domain-id   | instance-uuid                        | instance-name                 | flavor      | image-id                             | infac-cnt | infac-details                                        | disk-cnt | disk-details                                                             |
+| name              | domain-id   | instance-uuid                        | instance-name                 | flavor      | image-id                             | iface-cnt | iface-details                                        | disk-cnt | disk-details                                                             |
 +-------------------+-------------+--------------------------------------+-------------------------------+-------------+--------------------------------------+-----------+------------------------------------------------------+----------+--------------------------------------------------------------------------+
 | instance-00002374 | Not-Running | 64940445-c2db-4d7e-bf16-b26e64d7bf1f | linux-migrate                 | small.2GB   | 7d00245e-fbfd-4b04-b328-fb506230a42c | 1         | [u'bridge', u'xx:xx:xx:ed:a1:94', u'tap6ff0f1fa-2a'] | 1        | [u'network', u'sda', u'scsi', None]                                      |
 +-------------------+-------------+--------------------------------------+-------------------------------+-------------+--------------------------------------+-----------+------------------------------------------------------+----------+--------------------------------------------------------------------------+
