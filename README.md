@@ -12,8 +12,8 @@ Python script to parse the output of "virsh dumpxml" command captured with sosre
 alternatively without root
 
 	git clone https://github.com/ervikrant06/virsh_xml_parser.github
-        cd virsh_xml_parser
-        python -m pip install -r requirements.txt --user
+	cd virsh_xml_parser
+	python -m pip install -r requirements.txt --user
 	python setup.py install --user
 
 # Usage
