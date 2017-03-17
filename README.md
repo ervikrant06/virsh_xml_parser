@@ -7,12 +7,12 @@ Python script to parse the output of `virsh dumpxml` command captured with sosre
 ## Using pip
 
         # Activate python virtual environment and type
-	pip install xmlvirshparser
+        pip install xmlvirshparser
 
 ## Manual Install
 
         # Clone repo by typing 
-	git clone https://github.com/ervikrant06/virsh_xml_parser.github
+        git clone https://github.com/ervikrant06/virsh_xml_parser.github
         
         # Create virtual environment
         
@@ -28,7 +28,7 @@ Python script to parse the output of `virsh dumpxml` command captured with sosre
         # Install package using
 	
         cd virsh_xml_parser
-	python setup.py install
+        python setup.py install
 
 # Usage
 
