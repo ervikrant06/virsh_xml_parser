@@ -1,19 +1,27 @@
 # xmlvirshparser
 
-Python script to parse the output of "virsh dumpxml" command captured with sosreport
+Python script to parse the output of `virsh dumpxml` command captured with sosreport
 
 # Installation
 
 ## Install using pip
 
-	sudo pip install xmlvirshparser
+        virtualenv xmlvirshparser
+        source xmlvirshparser/bin/activate
+	pip install xmlvirshparser
 
 ## Installing from cloned repo
-alternatively without root
+
+### Requirements
+        
+        virtualenv deps
+        source deps/bin/activate
+        pip install xmltodict prettytable
+
+### Clone and Install
 
 	git clone https://github.com/ervikrant06/virsh_xml_parser.github
 	cd virsh_xml_parser
-	python -m pip install -r requirements.txt --user
 	python setup.py install --user
 
 # Usage
