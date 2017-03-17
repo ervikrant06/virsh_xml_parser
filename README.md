@@ -4,48 +4,30 @@ Python script to parse the output of `virsh dumpxml` command captured with sosre
 
 # Installation
 
-## Install using pip
+## Using pip
 
-### Create python virtual environments
-
-        # Python 2.7
-        # Create virtual environment
-        virtualenv ~/myvirtualenvs/xmlvirshparser
-        # Activate virtual environment
-        source ~/myvirtualenvs/xmlvirshparser/bin/activate
-
-        # Python 3.5
-        # Create virtual environment
-        pyvenv ~/myvirtualenvs/xmlvirshparser
-        # Activate virtual environment
-        source ~/myvirtualenvs/xmlvirshparser/bin/activate
-
-        # Install using pip in virtual environments
+        # Activate python virtual environment and type
 	pip install xmlvirshparser
 
-## Installing from cloned repo
+## Manual Install
 
-### Requirements
+        # Clone repo by typing 
+	git clone https://github.com/ervikrant06/virsh_xml_parser.github
+        
+        # Create virtual environment
         
         # Python 2.7
-        # Create virtual environment
-        virtualenv ~/deps/xmlvirshparser
-        # Activate virtual environment
-        source ~/myvirtualenvs/deps/bin/activate
+        virtualenv ~/myvirtualenvs/xmlvirshparser
 
         # Python 3.5
-        # Create virtual environment
-        pyvenv ~/myvirtualenvs/deps
-        # Activate virtual environment
-        source ~/myvirtualenvs/deps/bin/activate
+        pyvenv ~/myvirtualenvs/xmlvirshparser
         
-        # Install deps using pip in virtual environments
-        pip install xmltodict prettytable
-
-### Clone and Install
-
-	git clone https://github.com/ervikrant06/virsh_xml_parser.github
-	cd virsh_xml_parser
+        # Activate virtual environment
+        source ~/myvirtualenvs/xmlvirshparser/bin/activate
+        
+        # Install package using
+	
+        cd virsh_xml_parser
 	python setup.py install
 
 # Usage
