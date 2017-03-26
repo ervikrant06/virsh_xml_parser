@@ -11,4 +11,4 @@ notifications:
 install:
   - "pip install xmlvirshparser"
 script:
-  - "xmlvirshparser tap_interface_xml"
+  - xmlvirshparser virsh_-r_dumpxml_instance-000026a7
