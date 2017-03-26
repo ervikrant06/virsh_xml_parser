@@ -1,0 +1,8 @@
+setup.py
+xmlvirshparser/__init__.py
+xmlvirshparser.egg-info/PKG-INFO
+xmlvirshparser.egg-info/SOURCES.txt
+xmlvirshparser.egg-info/dependency_links.txt
+xmlvirshparser.egg-info/entry_points.txt
+xmlvirshparser.egg-info/requires.txt
+xmlvirshparser.egg-info/top_level.txt

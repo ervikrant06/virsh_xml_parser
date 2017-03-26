@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='xmlvirshparser',
-      version='0.4',
+      version='0.5',
       description='Parses virsh dump XML output to OpenStack prettytable form',
       url='https://github.com/ervikrant06/virsh_xml_parser',
       author='Vikrant Aggarwal',

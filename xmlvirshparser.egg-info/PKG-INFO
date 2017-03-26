@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: xmlvirshparser
+Version: 0.5
+Summary: Parses virsh dump XML output to OpenStack prettytable form
+Home-page: https://github.com/ervikrant06/virsh_xml_parser
+Author: Vikrant Aggarwal
+Author-email: vaggarwa@redhat.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: Linux
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Text Editors :: Text Processing
+Classifier: Topic :: Text Processing :: Markup :: XML
