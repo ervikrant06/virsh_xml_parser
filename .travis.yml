@@ -1,0 +1,14 @@
+language: python
+python:
+  - 2.7
+  - 3.4
+  - 3.5
+  - "nightly"
+sudo: false
+notifications:
+  email:
+    ervikrant06@gmail.com
+install:
+  - "pip install xmlvirshparser"
+script:
+  - "xmlvirshparser tap_interface_xml"
