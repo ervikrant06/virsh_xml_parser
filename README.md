@@ -1,6 +1,6 @@
 # xmlvirshparser
 
-Python script to parse the output of `virsh dumpxml` command captured with sosreport
+Python script to parse the output of `virsh dumpxml` command captured with sosreport.
 
 # Installation
 
